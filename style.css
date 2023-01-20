@@ -9,16 +9,23 @@ h1 {
     margin: 2rem;
     justify-content: center;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-.headmenu {
+.headmenu .footmenu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .headtitle {
     background: cyan;
 }
 .accessibility-choices {
     font-size: 15em;
+}
+.footcopyright {
+    text-align: right;
 }
 
 ul {
@@ -31,5 +38,21 @@ a{
     font-size: 1rem;
     text-decoration: none;
     padding:0.1%;
+    background: white;
+}
+.introduction {
+    font-size:1rem;
+}
+.accessible-city-link {
+    font-size: 2rem;
+}
+.a11checks {
+    font-size:1.1rem;
+}
+
+.morestoriesclass{
+    font-size:0.9rem;
+    text-decoration: none;
+    list-style-type: none;
     background: white;
 }
