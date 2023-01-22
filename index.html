@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <title Tech Returner News></title>
 </head>
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+    /* Set the width of the side navigation to 250px 
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    } */
+    
+</script>
 <body>
     <div>
         <ul  class="headmenu">
@@ -40,8 +63,8 @@
         </div>
     </div>
     </section>
-<nav class="sidebar"> 
-    <ul>
+<nav> 
+    <ul  id="mySidenav" class="sidenav">
     <li> <a href="#AUTHOR">Author</a> </li>
     <li> <a href="#IMAGE"> Accessibility Image</a> </li>
     <li> <a href="#INTRODUCTION"> Introduction</a> </li>

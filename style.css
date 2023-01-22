@@ -76,6 +76,8 @@ nav a:hover {
 }
   /* The side navigation menu */
 .sidenav {
+    display: flex;
+    flex-wrap: wrap;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -108,3 +110,8 @@ nav a:hover {
     font-size: 36px;
     margin-left: 50px;
 }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
