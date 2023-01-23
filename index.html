@@ -7,19 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title Tech Returner News></title>
 </head>
-<script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-}
-    
-</script>
 <body>
+    <div id="main"> 
     <div>
         <ul  class="headmenu">
             <li> <a href="#News" tabindex="1" ; accesskey="N">News</a> </li>
@@ -32,7 +21,7 @@ document.getElementById("mySidenav").style.width = "0";
             <li> <a href="#Jobs" tabindex="8" accesskey="J">Jobs</a></li>
         </ul>
     </div>
-    <div id="main">
+  
     <div class="headtitle">
         <h1> Accessibility Features: Easy Wins </h1>
     </div>
@@ -54,7 +43,7 @@ document.getElementById("mySidenav").style.width = "0";
     </div>
     </section>
 <nav> 
-    <ul  id="mySidenav" class="sidenav">
+    <ul  class="leftsidenav sidenav">
     <li> <a href="#AUTHOR">Author</a> </li>
     <li> <a href="#IMAGE"> Accessibility Image</a> </li>
     <li> <a href="#INTRODUCTION"> Introduction</a> </li>
@@ -62,9 +51,7 @@ document.getElementById("mySidenav").style.width = "0";
     <li> <a href="#ACCESSIBILITY_CHECKS"> Accessibility checks</a>  </li>
     <li> <a href="#FOR_MORE_INFORMATION_LINK"> For More Information </a>  </li>
     <li> <a href="#CONCLUSION"> Conclusion </a> </li>
-    <li> <a href="#MORE_STORIES"> More Stories</a> </li>
-    <!-- Use any element to open the sidenav -->
-    <li> <span onclick="openNav()">open</span> </li>
+  <!--   <li> <a href="#MORE_STORIES"> More Stories</a> </li>  -->
     </ul>
 </nav>
 
@@ -148,12 +135,13 @@ Keep this guide handy... When creating your own websites you can check these cri
     <p> By spending just a little more time on getting the building blocks of the web right, developers can help create an Internet that works for
         everyone.</p>
 </a>
-<!-- point 16 and 17 -->
+<!-- point 16 and 17 
     <a href="#MORE_STORIES" alt="More Stories">
     <h3> More Stories</h3>
-    </a>
-    <a id="MORE_STORIES">
-    <ol class="morestoriesclass">
+    </a>     <a id="MORE_STORIES"> -->
+    <aside > 
+    <ul class="sidenav rightsidenav">
+        <h3> More Stories</h3>
         <li> <a href="#Tokyo" alt="Tokyo Olympics:Gold for Great Britain"> Tokyo Olympics: gold for Great Britain! </a> </li>
         <li> <a href="#Day" alt="A Day in the life of "> A day in the life of</a>     </li>
         <li> <a href="#call" alt="Call for action">  Call for action as UK driver shortage hits supermarkets    </a>     </li>
@@ -162,8 +150,8 @@ Keep this guide handy... When creating your own websites you can check these cri
         <li> <a href="#safetymeeting" alt="Safety meeting">Safety meeting ends in accident  </a> </li>
         <li> <a href="#russiantraffic" alt="Russian Traffic">  Russian traffic officer with golden toilet is arrested after police uncover massive bribery scheme </a> </li>
         <li> <a href="#jellyfish" alt="Jellyfish"> Jellyfish apocalypse is coming claim scientists </a> </li>
-    </ol>
-    </a>
+    </ul>
+    </aside>
 </div>
 <!-- point no 18-->
 <footer>
