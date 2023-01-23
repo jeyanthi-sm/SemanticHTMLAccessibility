@@ -10,24 +10,13 @@
 <script>
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+/* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+document.getElementById("mySidenav").style.width = "0";
 }
-    /* Set the width of the side navigation to 250px 
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    /* Set the width of the side navigation to 0 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    } */
     
 </script>
 <body>
@@ -43,6 +32,7 @@ function closeNav() {
             <li> <a href="#Jobs" tabindex="8" accesskey="J">Jobs</a></li>
         </ul>
     </div>
+    <div id="main">
     <div class="headtitle">
         <h1> Accessibility Features: Easy Wins </h1>
     </div>
@@ -73,10 +63,12 @@ function closeNav() {
     <li> <a href="#FOR_MORE_INFORMATION_LINK"> For More Information </a>  </li>
     <li> <a href="#CONCLUSION"> Conclusion </a> </li>
     <li> <a href="#MORE_STORIES"> More Stories</a> </li>
+    <!-- Use any element to open the sidenav -->
+    <li> <span onclick="openNav()">open</span> </li>
     </ul>
 </nav>
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
+
+
 <a id="AUTHOR">
 <h2> Author</h2>
 Contact Author <a href="jimmy.eggs@hotmail.com">Contact Author Jim Eggs </a>
@@ -172,6 +164,7 @@ Keep this guide handy... When creating your own websites you can check these cri
         <li> <a href="#jellyfish" alt="Jellyfish"> Jellyfish apocalypse is coming claim scientists </a> </li>
     </ol>
     </a>
+</div>
 <!-- point no 18-->
 <footer>
     <ul class="footmenu">
